@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link rel="stylesheet" href="./style/home.css">
+  <link rel="stylesheet" href="./style/sliders.css">
+  <link rel="stylesheet" href="./style/general.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Neucha|Open+Sans&display=swap" rel="stylesheet">
+
+
+  <script src="scripts/navbar.js"></script>
+
+      <script src="https://kit.fontawesome.com/c82e2eb880.js" crossorigin="anonymous"></script>
+
+<title>Frutástico - Mais que fantástico!</title>
+</head>
+<body>
+  <!-- ======================== NAVBAR ============================ -->
+  <div id="nav-header">
+    <a href="./index.html"><img src="Marca.png"></a>
+    <div class="navbar">
+      <a href="./index.html">Início</a>
+      <a href="./index.html#products">Produtos</a>
+      <a href="./recipes.html">Receitas</a>
+      <a href="./comunity.html">Comunidade</a>
+      <a href="./about.html">Sobre</a>
+      <a href="./contact.html">Contato</a>
+    </div>
+    
+    <script src="scripts/main.js"></script>
+  </div>
+
+
+  <!-- ======================== SLIDER ============================ -->
+
+  <div id="slider" class="aspect-ratio">
+    <div class="wrapper">
+      <div class="slides">
+        <div class="slide" style="background-image: url('./imagens/banner0.png'); opacity: 1"></div>
+        <div class="slide" style="background-image: url('./imagens/banner1.png');"></div>
+        <div class="slide" style="background-image: url('./imagens/banner2.png');"></div>
+    
+        <div class="slides-btns">
+          <button class="slides-button" onclick="slide(-1)">&lsaquo;</button>
+          <button class="slides-button" onclick="slide(1)">&rsaquo;</button>
+        </div>  
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- ======================== PRODUCTS ============================ -->
+
+  <div id="products">
+    <h2 class="section-title">PRODUTOS</h2>
+    
+    <div class="page-width page-height">
+      <div class="favor">
+          <h3 class="name">ESCOLHA O SEU FRUTÁSTICO</h3>
+          <ul class="list products-box-color">
+            <li class="item"><button onclick="color('laranja')"><img src="./imagens/laranja.png"></button></li>
+            <li class="item"><button onclick="color('côco')"><img src="./imagens/coco.png"></button></li>
+            <li class="item"><button onclick="color('uva')"><img src="./imagens/uva.png"></button></li>
+            <li class="item"><button onclick="color('limão')"><img src="./imagens/limao.png"></button></li>
+            <li class="item"><button onclick="color('morango')"><img src="./imagens/morango.png"></button></li>
+            <li class="item"><button onclick="color('tangerina')"><img src="./imagens/tangerina.png"></button></li>
+          </ul>
+      </div>
+      
+      <div class="info" id="products-info">
+        <h3 class="name" id="fruit-name" style="text-transform: uppercase;"></h3>
+        <div class="tabs products-box-color">
+          <button id="btn-tab0" onclick="openTab('tab0')" class="item tab-btn" style="background-color: white;">Modo de preparo</button>
+          <button id="btn-tab1" onclick="openTab('tab1')" class="item tab-btn">Ingredientes</button>
+          <button id="btn-tab2" onclick="openTab('tab2')" class="item tab-btn">Tabela Nutricional</button>
+        </div>
+        <div class="tabs-content">
+          <div id="tab0" class="tab-content">
+            <h4 class="text-left">Modo de Preparo</h4>
+            <p>Misture o conteúdo deste envelope com 1 litro de água filtrada fria ou gelada e está pronto o seu refresco. Não é necessário acrescentar açúcar.</p>
+            <img src="./imagens/preparo.png">
+          </div>
+          <div id="tab1" class="tab-content" style="display: none;">
+            <h4 class="text-left">Ingredientes</h4>
+            <p>Açúcar, maltodextrina, suco de caju desidratado, vitamina C, sulfato de zinco, vitamina D, acidulante ácido cítrico, espessantes: goma guar e goma xantana, regulador de acidez citrato de sódio, antiumectante fosfato tricálcico, edulcorantes: ciclamato de sódio (21mg/100ml), aspartame (17mg/100ml), acesulfame de potássio (2,1mg/100ml), sacarina sódica (1,7mg/100ml), corantes: dióxido de titânio, caramelo IV, tartrazina e amarelo crepúsculo FCF, aromatizante e espumante extrato de quiláia.
+            </p>
+            <p>ALÉRGICOS: PODE CONTER LEITE. NÃO CONTÉM GLÚTEN. FENILCETONÚRICOS: CONTÉM FENILALANINA.</p>
+          </div>
+          <div id="tab2" class="tab-content" style="display: none;">
+            <h4 class="text-left">Tabela Nutricional</h4>
+            <p>Porção 5 g (1/4 da embalagem)</p>
+            <table id="table">
+              <thead id="table-header">
+                <td>Quantidade por porção</td>
+                <td></td>
+                <td>%VD (*)</td>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Valor energético</td>
+                  <td>16 kcal = 67 kJ</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Carboidratos</td>
+                  <td>4,1 g</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Sódio</td>
+                  <td>10 mg</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Vitamina C</td>
+                  <td>7 mg</td>
+                  <td>16</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>Não contém quantidade significativa de gorduras totais, gorduras saturadas, gorduras trans e fibra alimentar.<br>(*) % Valores Diários com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <!-- ======================== RECIPES ============================ -->
+
+  <div id="recipes" class="page-width">
+    <h2 class="section-title">RECEITAS</h2>
+    <div class="smallSlideContainer">
+      <button class="slides-button" onclick="smallSlide(-1, 'recipes-slider')">&lsaquo;</button>
+      
+      <div class="smallSlider">
+        <div id="recipes-slider" class="wrapper">
+          <a href="./recipes/trufa.html" class="smallSlide" style="background-image: url('receitas/bombom.jpg');">
+            <p>Trufa recheada de morango</p>
+          </a>
+          <a href="./recipes/iogurte.html" class="smallSlide" style="background-image: url('receitas/iogurte.jpg');">
+            <p>Iogurte de morango com granola</p>
+          </a>
+          <a href="./recipes/mousseLaranja.html" class="smallSlide" style="background-image: url('receitas/mousse-laranja.jpg');">
+            <p>Mousse de laranja</p>
+          </a>
+          <a href="./recipes/pudimAbacaxi.html" class="smallSlide" style="background-image: url('receitas/pudim-abacaxi.jpg');">
+            <p>Pudim de abacaxi e cobertura de côco</p>
+          </a>
+          <a href="./recipes/pudimPessego.html" class="smallSlide" style="background-image: url('receitas/pudim-pessego.jpg');">
+            <p>Pudim com calda de pêssego</p>
+          </a>
+          <a href="./recipes/beijinhoMaracuja.html" class="smallSlide" style="background-image: url('receitas/docinho-maracujá.jpg');">
+            <p>Beijinho de maracujá</p>
+          </a>
+        </div> 
+      </div>
+
+      <button class="slides-button" onclick="smallSlide(1, 'recipes-slider')">&rsaquo;</button>
+    </div>
+  </div>
+
+
+  <!-- ======================== FOOTER   ============================ -->
+  
+  <footer class="footer">
+    <div class="page-width">
+      <div class="info">
+        <div>
+            <h4 class="text-left">Fale conosco</h4>
+            <ul>
+              <li>
+                <i class="fa fa-phone"></i>
+                <span>(00) 4002-8922</span>
+              </li>
+              <li>
+                <i class="fa fa-envelope"></i>
+                <span>frutastico@mail.com</span>
+              </li>
+              <li>
+                <i class="fa fa-map-marker-alt"></i>
+                <span>Recife - PE, Jardim Atlântico, Rua dos Bobos, nº 0</span>
+              </li>
+            </ul>
+        </div>
+        <div class="text-right">
+            <h4>Redes Sociais</h4>
+            <ul class="social">
+              <li><a href=""><i class="fab fa-facebook"></i></a></li>
+              <li><a href=""><i class="fab fa-instagram"></i></a></li>
+              <li><a href=""><i class="fab fa-youtube"></i></a></li>
+              <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+      </div>
+      <div class="menu text-center">
+          <div class="text-center image">
+              <a href="./index.html"><img src="Marca.png" width="130px"></a>
+          </div>
+        <ul>
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./index.html#products">Produtos</a></li>
+            <li><a href="./recipes.html">Receitas</a></li>
+            <li><a href="./comunity.html">Comunidade</a></li>
+            <li><a href="./about.html">Sobre</a></li>
+            <li><a href="./contact.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>    
+  </footer>
+
+
+
+
+  <script src="./scripts/main.js"></script>
+  <script src="./scripts/sliders.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 0;
+}
+.recipes li {
+  width: 500px;
+  display: block;
+  margin: 20px;
+}
+.recipes li a {
+  display: block;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.recipes li a p {
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  background: #000000aa;
+  color: #fff;
+  transition: all .5s ease;
+}
+
+.recipes li.show a p {
+  background: #db9538;
+  padding: 30px;
+  font-size: 1.2em;
+}

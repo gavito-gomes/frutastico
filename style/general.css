@@ -1,0 +1,149 @@
+/* ================= GENERAL =================== */
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  margin: 0;
+  padding-top: 250px;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  text-align: center;
+  font-family: 'Neucha', cursive;
+}
+h2 { font-size: 2.5em; }
+h3 { font-size: 1.9em; }
+h4 { font-size: 1.3em; }
+a { text-decoration: none; }
+
+ul { margin: 0; }
+
+button { 
+  border: none;
+  background: transparent;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.page-width {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.page-height { min-height: 80vh;}
+
+.section-title { padding-top: 60px;}
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align:  center; }
+
+
+
+/* ================= NAVBAR =================== */
+
+#nav-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background: rgb(231, 52,51);
+  padding: 50px 0 20px;
+  text-align: center;
+  height: 200px;
+  transition: all .5s ease;
+}
+#nav-header img {
+  max-width: 300px;
+  transition: all .5s ease;
+}
+
+.navbar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  transition: all .5s ease;
+}
+
+.navbar a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+}
+
+#nav-header.sticky  {
+  height: 20px;
+  box-shadow: 0 6px 3px #00000033;
+}
+#nav-header.sticky img {
+  max-width: 0;
+}
+
+.header {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: 3px;
+  padding: 80px 0 50px;
+  background: lightgray;
+}
+
+
+
+/* ================= FOOTER =================== */
+.footer {
+  padding: 50px;
+  background: #302733;
+  color: #f2f2f2;
+}
+.footer li{
+  list-style: none;
+}
+.footer .info{
+  display: flex;
+  justify-content: space-between;
+}
+.footer .info ul {
+  padding-left: 0;
+}
+.footer .info li {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.footer .info li i{
+  font-size: 1em;
+  margin-right: 10px;
+}
+.footer .info .social {
+  display: flex;
+  font-size: 1.2em;
+}
+.footer .info .social li i{
+  margin: 0;
+}
+
+.footer .menu {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .menu li{
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer .menu .image{
+  margin-right: 50px;
+}
+
+
+.footer li a{
+  color:inherit;
+}

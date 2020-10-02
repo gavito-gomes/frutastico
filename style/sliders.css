@@ -1,0 +1,122 @@
+
+/* ================= SLIDER =================== */
+
+#slider {
+  background: lightgrey;
+  width: 100%;
+  height: 500px;
+  margin: auto;
+}
+#slider.aspect-ratio {
+  height: unset;
+}
+
+#slider .wrapper {
+  width: 100%;
+  position: relative;
+}
+
+#slider.aspect-ratio .wrapper {
+  padding-top: 50%;
+}
+
+
+#slider .slides {
+  /* background: lightpink; */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#slider .slides .slide {
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  /* background: rgb(241,135,40); */
+}
+
+.slides-btns {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slides-button {
+  color: white;
+  font-weight: bolder;
+  font-size: 5vw;
+  margin: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  opacity: .5;
+}
+
+.slides-button:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+/* =========================================== */
+
+
+
+
+/* ======================= Small slider ============================ */
+.smallSlideContainer {
+  position: relative;
+  /* background: lightblue; */
+  width: 100%;
+  padding: 100px 0 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.smallSlider {
+  width: 80%;
+  padding: 10px 0;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.smallSlider .wrapper {
+  /* background: sienna; */
+  position: relative;
+  left: 0;
+  display: flex;
+  width: fit-content;
+  flex-wrap: nowrap;
+  transition: left 1s ease;
+}
+
+.smallSlider .smallSlide {
+  width: 280px;
+  height: 228px;
+  /* background: lightgreen; */
+  margin: 0 20px;
+  display: inline-flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 2px 2px 6px 2px #000422bb;
+}
+.smallSlider .smallSlide p {
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  background: #000000aa;
+  color: #fff;
+}
+#recipes .slides-button {
+  color: #000422;
+}
