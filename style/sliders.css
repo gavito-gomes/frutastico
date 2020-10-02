@@ -6,10 +6,15 @@
   width: 100%;
   height: 500px;
   margin: auto;
+  position: relative;
+  top: -200px;
+  background-color: rgb(231, 52,51);
+  padding-top: 200px;
 }
 #slider.aspect-ratio {
   height: unset;
 }
+
 
 #slider .wrapper {
   width: 100%;
